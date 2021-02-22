@@ -1,0 +1,28 @@
+body{
+    background-color: #1abc9c;
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    padding:15px 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: 200ms linear;
+}
+
+.button:hover {
+    background-color: #16a085;
+}
