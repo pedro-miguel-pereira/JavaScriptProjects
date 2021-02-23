@@ -1,0 +1,40 @@
+body{
+    background-color: #f39c12;
+    color: white;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 100%;
+    transform: translate(0,-50%);
+    text-align: center;
+}
+
+.carousel{
+    position: relative;
+    font-size: 45px;
+    height: 50px;
+}
+
+.carousel .pre{
+    position: absolute;
+    height: 50px;
+    text-shadow: 2px 2px 2px #e67e22;
+    right: 55%;
+}
+
+.carousel .change-outer{
+    position: absolute;
+    height: 55px;
+    left: 46%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.carousel .change_outer, .element{
+    height: 60px;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #e67e22;
+}
