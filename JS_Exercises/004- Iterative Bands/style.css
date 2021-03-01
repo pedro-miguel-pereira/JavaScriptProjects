@@ -1,0 +1,60 @@
+.band {
+	transform-origin: left;
+	position: absolute;
+	height: 100vh;
+	transition: transform 500ms ease-in-out;
+}
+
+.band.-blue {
+	background-color: #34495e;
+}
+
+.band.-orange {
+	background-color: #e67e22;
+}
+
+.band.-first {
+	width: 25%;
+	z-index: 4;
+}
+
+.band.-second {
+	width: 50%;
+	z-index: 3;
+}
+
+.band.-third {
+	width: 75%;
+	z-index: 2;
+}
+
+.band.-fourth {
+	width: 100%;
+	z-index: 1;
+}
+
+span {
+	position: absolute;
+	color: white;
+	opacity: 0;
+	top: 50%;
+	z-index: 5;
+	transition: all 500ms ease-in-out;
+	transform: translate(-50%, -50%);
+	font-weight: 1000;
+}
+
+#t1 {
+	left: 27%;
+}
+
+#t2 {
+	left: 42%;
+}
+#t3 {
+	left: 57%;
+}
+
+#t4 {
+	left: 72%;
+}
