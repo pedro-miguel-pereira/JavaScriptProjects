@@ -1,0 +1,102 @@
+body {
+	background-color: #ffdcb5;
+}
+
+.pig {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 500px;
+}
+
+.pig .head {
+	position: absolute;
+	background-color: #f7949a;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	bottom: 0;
+}
+
+.pig .ear {
+	position: absolute;
+	border: 15px solid #f7949a;
+	background-color: #ffb7bc;
+	width: 100px;
+	height: 100px;
+	z-index: -1;
+}
+
+.pig .ear.-left {
+	border-radius: 50px 0 0 0;
+	left: 10px;
+	transform: rotate(-15deg) skewY(30deg) translate(-30px, 120px);
+}
+
+.pig .ear.-right {
+	border-radius: 0 50px 0 0;
+	right: 10px;
+	transform: rotate(15deg) skewY(-30deg) translate(30px, 120px);
+}
+
+.snout {
+	position: absolute;
+	background-color: #ffb7bc;
+	width: 150px;
+	height: 120px;
+	border-radius: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 50px;
+}
+
+.nose {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #ce666d;
+	left: 60px;
+	top: 30px;
+}
+
+.nose.-left {
+	transform: translateX(-30px);
+}
+
+.nose.-right {
+	transform: translateX(30px);
+}
+
+.eye {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #fff;
+	left: 170px;
+	bottom: 200px;
+	transition: transform 200ms ease-in-out;
+}
+
+.eye.-left {
+	left: 100px;
+}
+
+.eye.-right {
+	left: unset;
+	right: 100px;
+}
+
+.eye .black {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #000;
+}
