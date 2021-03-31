@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="sub-center">
+			<div class="sub-menu">
+				<ul>
+					<li><span class="sub-menu-items">Dashboard</span></li>
+					<li><span class="sub-menu-items">Profile</span></li>
+					<li><span class="sub-menu-items">Notifications</span></li>
+					<li><span class="sub-menu-items">Messages</span></li>
+					<li><span class="sub-menu-items">Settings</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<div class="header">
+				<div
+					class="icon"
+					onmouseover="iconChangeColor('#fff')"
+					onmouseout="iconChangeColor('#b2daff')"
+					onclick="showSubMenu()"
+				>
+					<div class="line-top"></div>
+					<div class="line-bottom"></div>
+					<div class="circle"></div>
+				</div>
+				<span class="title">Notifications</span>
+				<input type="text" class="search-input" placeholder="Search..." />
+				<div class="search-icon" onclick="showSearchBar()"></div>
+			</div>
+			<div class="notifications-info">
+				<div class="line"></div>
+				<div class="notification">
+					<a class="text">
+						<div class="circle"></div>
+						<span class="time">9:24 AM</span>
+						<p><b>John Walker</b> posted a photo on your wall.</p></a
+					>
+				</div>
+				<div class="notification">
+					<a class="text">
+						<div class="circle"></div>
+						<span class="time">8:14 AM</span>
+						<p><b>Alice Parker</b> commented your last post.</p></a
+					>
+				</div>
+				<div class="notification">
+					<a class="text">
+						<div class="circle"></div>
+						<span class="time">Yesterday</span>
+						<p><b>Luke Wayne</b> added you as friend.</p></a
+					>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
